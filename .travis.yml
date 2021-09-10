@@ -9,3 +9,4 @@ scrip:
   - docker-compose exec --env 'RAILS_ENV=test' web rails db:create
   - docker-compose exec --env 'RAILS_ENV=test' web db:migrate
   - docker-compose exec --env 'RAILS_ENV=test' web rails test
+  
