@@ -17,6 +17,8 @@ branches:
 
 deploy:
   provider: script
+  on:                # 追加
+    branch: main  # 追加
   script : 
     docker build -t registry.heroku.com/$HEROKU_APP_NAME/web -f Dockerfile.prod .;
     docker push registry.heroku.com/$HEROKU_APP_NAME/web;
